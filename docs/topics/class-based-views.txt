@@ -93,9 +93,10 @@ method call itself::
         (r'^about/', TemplateView.as_view(template_name="about.html")),
     )
 
-A similar overriding pattern can be used for the ``url`` attribute on
+A similar pattern can be used to set the ``url`` attribute on
 :class:`~django.views.generic.base.RedirectView`, another simple
-generic view.
+generic view. For anything much more complicated, though, you
+should create a subclass.
 
 
 Generic views of objects
